@@ -20,10 +20,6 @@ export default function App() {
           </RootLayout>
         </BrowserRouter>
       </main>
-
-      <footer className="py-6 text-center text-gray-600 text-sm">
-        © {new Date().getFullYear()} Triviiia. All rights reserved.
-      </footer>
     </div>
   );
 }
