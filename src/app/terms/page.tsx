@@ -191,51 +191,53 @@ const TermsOfUse = () => {
   const currentContent = content[language];
 
   return (
-    <div className="max-w-2xl mx-auto p-4 mt-12 text-gray-800">
-      <div className="flex justify-end mb-4">
-        <button
-          onClick={() => setLanguage("jp")}
-          className={`${
-            language === "jp"
-              ? "bg-emerald-500 text-white"
-              : "bg-gray-300 text-gray-700"
-          }  font-bold py-2 px-4 rounded mr-2`}
-        >
-          日本語
-        </button>
-        <button
-          onClick={() => setLanguage("en")}
-          className={`${
-            language === "en"
-              ? "bg-emerald-500 text-white"
-              : "bg-gray-300 text-gray-700"
-          }  font-bold py-2 px-4 rounded mr-2`}
-        >
-          English
-        </button>
-      </div>
-
-      <h1 className="text-2xl font-bold mb-4">{currentContent.title}</h1>
-      <p className="mb-4">{currentContent.intro}</p>
-
-      {currentContent.sections.map((section, index) => (
-        <div key={index}>
-          <h2 className="text-xl font-semibold mt-6 mb-2">{section.title}</h2>
-          <p className="mb-4">{section.content}</p>
-          {section.list && (
-            <ul className="list-disc pl-6 mb-4">
-              {section.list.map((item, itemIndex) => (
-                <li key={itemIndex}>{item}</li>
-              ))}
-            </ul>
-          )}
-          {section.additionalContent && (
-            <p className="mb-4">{section.additionalContent}</p>
-          )}
+    <div className="bg-custom-dark text-gray-100">
+      <div className="max-w-2xl mx-auto p-4 ">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={() => setLanguage("jp")}
+            className={`${
+              language === "jp"
+                ? "bg-emerald-500 text-white"
+                : "bg-gray-300 text-gray-700"
+            }  font-bold py-2 px-4 rounded mr-2`}
+          >
+            日本語
+          </button>
+          <button
+            onClick={() => setLanguage("en")}
+            className={`${
+              language === "en"
+                ? "bg-emerald-500 text-white"
+                : "bg-gray-300 text-gray-700"
+            }  font-bold py-2 px-4 rounded mr-2`}
+          >
+            English
+          </button>
         </div>
-      ))}
 
-      <p className="mt-8">{currentContent.footer}</p>
+        <h1 className="text-2xl font-bold mb-4">{currentContent.title}</h1>
+        <p className="mb-4">{currentContent.intro}</p>
+
+        {currentContent.sections.map((section, index) => (
+          <div key={index}>
+            <h2 className="text-xl font-semibold mt-6 mb-2">{section.title}</h2>
+            <p className="mb-4">{section.content}</p>
+            {section.list && (
+              <ul className="list-disc pl-6 mb-4">
+                {section.list.map((item, itemIndex) => (
+                  <li key={itemIndex}>{item}</li>
+                ))}
+              </ul>
+            )}
+            {section.additionalContent && (
+              <p className="mb-4">{section.additionalContent}</p>
+            )}
+          </div>
+        ))}
+
+        <p className="mt-8">{currentContent.footer}</p>
+      </div>
     </div>
   );
 };

@@ -102,80 +102,82 @@ const PrivacyPolicy = () => {
   const currentContent = content[language];
 
   return (
-    <div className="max-w-2xl mx-auto p-6 mt-12 text-gray-800">
-      <div className="flex justify-end mb-4">
-        <button
-          onClick={() => setLanguage("jp")}
-          className={`${
-            language === "jp"
-              ? "bg-emerald-500 text-white"
-              : "bg-gray-300 text-gray-700"
-          }  font-bold py-2 px-4 rounded mr-2`}
-        >
-          日本語
-        </button>
-        <button
-          onClick={() => setLanguage("en")}
-          className={`${
-            language === "en"
-              ? "bg-emerald-500 text-white"
-              : "bg-gray-300 text-gray-700"
-          }  font-bold py-2 px-4 rounded mr-2`}
-        >
-          English
-        </button>
+    <div className="bg-custom-dark text-gray-100">
+      <div className="max-w-2xl mx-auto p-6 ">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={() => setLanguage("jp")}
+            className={`${
+              language === "jp"
+                ? "bg-emerald-500 text-white"
+                : "bg-gray-300 text-gray-700"
+            }  font-bold py-2 px-4 rounded mr-2`}
+          >
+            日本語
+          </button>
+          <button
+            onClick={() => setLanguage("en")}
+            className={`${
+              language === "en"
+                ? "bg-emerald-500 text-white"
+                : "bg-gray-300 text-gray-700"
+            }  font-bold py-2 px-4 rounded mr-2`}
+          >
+            English
+          </button>
+        </div>
+
+        <h1 className="text-3xl font-bold mb-4">{currentContent.title}</h1>
+        <p className="mb-4">{currentContent.intro}</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-2">
+          {currentContent.section1.title}
+        </h2>
+        <p className="mb-4">{currentContent.section1.content}</p>
+        <ul className="list-disc list-inside mb-4">
+          {currentContent.section1.list &&
+            currentContent.section1.list.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+        </ul>
+
+        <h2 className="text-2xl font-bold mt-8 mb-2">
+          {currentContent.section2.title}
+        </h2>
+        <p className="mb-4">{currentContent.section2.content}</p>
+        <ul className="list-disc list-inside mb-4">
+          {currentContent.section2.list &&
+            currentContent.section2.list.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+        </ul>
+
+        <h2 className="text-2xl font-bold mt-8 mb-2">
+          {currentContent.section3.title}
+        </h2>
+        <p className="mb-4">{currentContent.section3.content}</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-2">
+          {currentContent.section4.title}
+        </h2>
+        <p className="mb-4">{currentContent.section4.content}</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-2">
+          {currentContent.section5.title}
+        </h2>
+        <p className="mb-4">{currentContent.section5.content}</p>
+
+        {currentContent.section6 && (
+          <>
+            <h2 className="text-2xl font-bold mt-8 mb-2">
+              {currentContent.section6.title}
+            </h2>
+            <p className="mb-4">{currentContent.section6.content}</p>
+          </>
+        )}
+
+        <p className="mt-8">{currentContent.footer.established}</p>
       </div>
-
-      <h1 className="text-3xl font-bold mb-4">{currentContent.title}</h1>
-      <p className="mb-4">{currentContent.intro}</p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-2">
-        {currentContent.section1.title}
-      </h2>
-      <p className="mb-4">{currentContent.section1.content}</p>
-      <ul className="list-disc list-inside mb-4">
-        {currentContent.section1.list &&
-          currentContent.section1.list.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-      </ul>
-
-      <h2 className="text-2xl font-bold mt-8 mb-2">
-        {currentContent.section2.title}
-      </h2>
-      <p className="mb-4">{currentContent.section2.content}</p>
-      <ul className="list-disc list-inside mb-4">
-        {currentContent.section2.list &&
-          currentContent.section2.list.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-      </ul>
-
-      <h2 className="text-2xl font-bold mt-8 mb-2">
-        {currentContent.section3.title}
-      </h2>
-      <p className="mb-4">{currentContent.section3.content}</p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-2">
-        {currentContent.section4.title}
-      </h2>
-      <p className="mb-4">{currentContent.section4.content}</p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-2">
-        {currentContent.section5.title}
-      </h2>
-      <p className="mb-4">{currentContent.section5.content}</p>
-
-      {currentContent.section6 && (
-        <>
-          <h2 className="text-2xl font-bold mt-8 mb-2">
-            {currentContent.section6.title}
-          </h2>
-          <p className="mb-4">{currentContent.section6.content}</p>
-        </>
-      )}
-
-      <p className="mt-8">{currentContent.footer.established}</p>
     </div>
   );
 };

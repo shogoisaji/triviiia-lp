@@ -1,6 +1,6 @@
 export default function AppPreview() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-custom-dark">
       <div className="container mx-auto px-4">
         <div className="relative max-w-md mx-auto">
           {/* Decorative circles */}
