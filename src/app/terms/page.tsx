@@ -92,6 +92,11 @@ const TermsOfUse = () => {
           content:
             "本規約の解釈にあたっては、日本法を準拠法とします。\n本アプリに関して紛争が生じた場合には、運営者の本店所在地を管轄する裁判所を専属的合意管轄とします。",
         },
+        {
+          title: "第12条（情報の正確性および免責事項）",
+          content:
+            "本アプリに掲載されるトリビアや雑学情報（以下「本情報」といいます。）は、運営者が独自に調査し提供するものです。本情報の正確性、完全性、有用性については可能な限り注意を払っておりますが、その内容について保証するものではありません。\n\nユーザーは、本情報を参考にする際、自らの判断と責任に基づいて利用するものとします。本情報に基づく行動によって生じた損害や不利益について、運営者は一切責任を負いません。\n\n本情報に誤りや不適切な内容が含まれている場合がございます。その場合、ユーザーは本アプリ内のお問い合わせフォームまたは運営者が指定する方法を通じてご報告いただけますようお願いいたします。\n\n運営者は、ユーザーからの報告を受けた場合、本情報の内容を確認し、必要に応じて修正または削除する権利を有します。ただし、報告に対する対応義務を負うものではありません。",
+        },
       ],
       footer: "以上",
     },
@@ -182,6 +187,11 @@ const TermsOfUse = () => {
           title: "Article 11 (Governing Law and Jurisdiction)",
           content:
             "The interpretation of these Terms shall be governed by the laws of Japan.\nIn the event of a dispute regarding this application, the court having jurisdiction over the location of the operator's head office shall have exclusive agreed jurisdiction.",
+        },
+        {
+          title: "Article 12 (Accuracy of Information and Disclaimer)",
+          content:
+            "The trivia and miscellaneous information (hereinafter referred to as 'the Information') posted on this application is provided by the operator based on its own research. While we pay as much attention as possible to the accuracy, completeness, and usefulness of the Information, we do not guarantee its content.\n\nUsers shall use the Information at their own discretion and responsibility. The operator shall not be liable for any damages or disadvantages caused by actions based on the Information.\n\nThe Information may contain errors or inappropriate content. In such cases, users are requested to report it through the inquiry form in this application or by the method specified by the operator.\n\nThe operator has the right to check the content of the Information upon receiving a report from a user and to correct or delete it as necessary. However, the operator is not obligated to respond to the report.",
         },
       ],
       footer: "End of Terms",

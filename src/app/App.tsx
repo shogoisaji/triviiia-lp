@@ -7,7 +7,7 @@ import RootLayout from "./layout";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#342F3D]">
+    <div className="min-h-screen bg-[#342F3D] overscroll-none">
       <main>
         <BrowserRouter>
           <RootLayout>
