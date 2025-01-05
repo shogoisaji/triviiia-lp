@@ -6,7 +6,11 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-custom-dark backdrop-blur-sm">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <a href="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-emerald-500 rounded-lg" />
+          <img
+            src="/logo.png"
+            alt="Triviiia Logo"
+            className="w-8 h-8 rounded-lg"
+          />
           <span className="text-xl text-gray-100 font-semibold">Triviiia</span>
         </a>
 

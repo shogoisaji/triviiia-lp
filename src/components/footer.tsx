@@ -4,7 +4,11 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <a href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-emerald-500 rounded-lg" />
+            <img
+              src="/logo.png"
+              alt="Triviiia Logo"
+              className="w-8 h-8 rounded-lg"
+            />
             <span className="text-xl text-gray-200 font-semibold">
               Triviiia
             </span>

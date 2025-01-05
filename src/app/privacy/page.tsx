@@ -13,39 +13,42 @@ const PrivacyPolicy = () => {
       section1: {
         title: "1. 個人情報の収集について",
         content:
-          "当社は、本サービスの提供にあたり、以下の個人情報を収集することがあります：",
-        list: ["氏名", "メールアドレス", "利用履歴", "端末情報"],
+          "当社は、本サービス提供にあたり以下の個人情報を収集する場合があります：",
+        list: [
+          "デバイスID（広告IDなど）",
+          "おおよその位置情報",
+          "アプリ使用状況データ（操作履歴）",
+          "クラッシュデータおよびパフォーマンスデータ",
+        ],
       },
       section2: {
-        title: "2. 個人情報の利用目的",
-        content: "収集した個人情報は、以下の目的で利用します：",
+        title: "2. 情報収集の目的",
+        content: "当社は、以下の目的で収集した情報を使用します：",
         list: [
-          "本サービスの提供・運営のため",
-          "ユーザーからのお問い合わせに対応するため",
-          "利用規約に違反する行為に対応するため",
-          "サービスの改善のため",
-          "広告の表示",
+          "広告表示および最適化",
+          "サービス改善のための分析",
+          "クラッシュやパフォーマンス問題の診断",
         ],
       },
       section3: {
-        title: "3. 個人情報の第三者提供",
+        title: "3. 第三者への提供",
         content:
-          "当社は、法令に基づく場合を除き、ユーザーの同意を得ることなく、個人情報を第三者に提供することはありません。",
+          "当社は、Google AdMobによって収集された情報を第三者と共有する場合があります。詳細についてはGoogleプライバシーポリシーをご参照ください。",
+        link: "https://policies.google.com/technologies/ads?hl=ja",
       },
       section4: {
-        title: "4. 個人情報の保護",
-        content:
-          "当社は、個人情報の漏洩、滅失、き損の防止その他の個人情報の安全管理のために必要かつ適切な措置を講じます。",
+        title: "4. ユーザー権利と選択肢",
+        content: "ユーザーは以下の方法で自身の情報管理が可能です：",
+        list: [
+          "端末設定から広告IDをリセットまたは削除",
+          "アプリ内設定画面より同意内容変更または撤回",
+          "アプリ削除によるデータ収集停止",
+        ],
       },
       section5: {
-        title: "5. 個人情報の利用について",
+        title: "5. プライバシーポリシー更新について",
         content:
-          "当社は、主に広告表示の目的でATT（App Tracking Transparency）を通じて個人情報を利用する場合があります。また、広告配信にはGoogle AdMobを利用します。ログイン機能等、その他の目的で個人情報を利用することはありません。",
-      },
-      section6: {
-        title: "6. プライバシーポリシーの変更",
-        content:
-          "当社は、必要に応じて、このプライバシーポリシーの内容を変更することがあります。変更後のプライバシーポリシーは、当社が別途定める場合を除いて、本ウェブサイトに掲載したときから効力を生じるものとします。",
+          "本ポリシーが変更された場合、当社ウェブサイトまたはアプリ内で通知します。",
       },
       footer: {
         established: "制定日：2024年12月30日",
@@ -59,39 +62,41 @@ const PrivacyPolicy = () => {
         title: "1. Collection of Personal Information",
         content:
           "We may collect the following personal information in connection with the provision of this service:",
-        list: ["Name", "Email address", "Usage history", "Device information"],
+        list: [
+          "Device ID (such as advertising ID)",
+          "Approximate location information",
+          "App usage data (operation history)",
+          "Crash data and performance data",
+        ],
       },
       section2: {
         title: "2. Purpose of Using Personal Information",
-        content:
-          "The collected personal information will be used for the following purposes:",
+        content: "We use the collected information for the following purposes:",
         list: [
-          "To provide and operate this service",
-          "To respond to inquiries from users",
-          "To respond to acts that violate the terms of use",
-          "To improve the service",
-          "Displaying advertisements",
+          "Advertising display and optimization",
+          "Analysis for service improvement",
+          "Diagnosis of crash and performance issues",
         ],
       },
       section3: {
-        title: "3. Provision of Personal Information to Third Parties",
+        title: "3. Provision to Third Parties",
         content:
-          "We will not provide personal information to third parties without the user's consent, except as required by law.",
+          "We may share information collected by Google AdMob with third parties. Please refer to the Google Privacy Policy for details.",
+        link: "https://policies.google.com/technologies/ads?hl=en",
       },
       section4: {
-        title: "4. Protection of Personal Information",
-        content:
-          "We will take necessary and appropriate measures to prevent leakage, loss, or damage of personal information and to ensure the safe management of personal information.",
+        title: "4. User Rights and Options",
+        content: "Users can manage their information in the following ways:",
+        list: [
+          "Reset or delete the advertising ID from the device settings",
+          "Change or withdraw consent from the in-app settings screen",
+          "Stop data collection by deleting the app",
+        ],
       },
       section5: {
-        title: "5. Use of Personal Information",
+        title: "5. About Privacy Policy Updates",
         content:
-          "We may use personal information through ATT (App Tracking Transparency) mainly for the purpose of displaying advertisements. We also use Google AdMob for ad delivery. We do not use personal information for other purposes such as login functions.",
-      },
-      section6: {
-        title: "6. Changes to the Privacy Policy",
-        content:
-          "We may change the contents of this Privacy Policy as necessary. Unless otherwise specified by us, the revised Privacy Policy shall take effect when it is posted on this website.",
+          "If this policy is changed, we will notify you on our website or within the app.",
       },
       footer: {
         established: "Established: December 30, 2024",
@@ -166,15 +171,6 @@ const PrivacyPolicy = () => {
           {currentContent.section5.title}
         </h2>
         <p className="mb-4">{currentContent.section5.content}</p>
-
-        {currentContent.section6 && (
-          <>
-            <h2 className="text-2xl font-bold mt-8 mb-2">
-              {currentContent.section6.title}
-            </h2>
-            <p className="mb-4">{currentContent.section6.content}</p>
-          </>
-        )}
 
         <p className="mt-8">{currentContent.footer.established}</p>
       </div>
