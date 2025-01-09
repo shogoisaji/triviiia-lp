@@ -9,47 +9,62 @@ const PrivacyPolicy = () => {
     jp: {
       title: "プライバシーポリシー",
       intro:
-        "このプライバシーポリシーは、Triviiia（以下、「本サービス」といいます。）が提供するサービスにおける、以下の通りプライバシーポリシー（以下「本ポリシー」と言います。）を定めます。",
-      section1: {
-        title: "1. 個人情報の収集について",
-        content:
-          "当社は、本サービス提供にあたり以下の個人情報を収集する場合があります：",
-        list: [
-          "デバイスID（広告IDなど）",
-          "おおよその位置情報",
-          "アプリ使用状況データ（操作履歴）",
-          "クラッシュデータおよびパフォーマンスデータ",
-        ],
-      },
-      section2: {
-        title: "2. 情報収集の目的",
-        content: "当社は、以下の目的で収集した情報を使用します：",
-        list: [
-          "広告表示および最適化",
-          "サービス改善のための分析",
-          "クラッシュやパフォーマンス問題の診断",
-        ],
-      },
-      section3: {
-        title: "3. 第三者への提供",
-        content:
-          "当社は、Google AdMobによって収集された情報を第三者と共有する場合があります。詳細についてはGoogleプライバシーポリシーをご参照ください。",
-        link: "https://policies.google.com/technologies/ads?hl=ja",
-      },
-      section4: {
-        title: "4. ユーザー権利と選択肢",
-        content: "ユーザーは以下の方法で自身の情報管理が可能です：",
-        list: [
-          "端末設定から広告IDをリセットまたは削除",
-          "アプリ内設定画面より同意内容変更または撤回",
-          "アプリ削除によるデータ収集停止",
-        ],
-      },
-      section5: {
-        title: "5. プライバシーポリシー更新について",
-        content:
-          "本ポリシーが変更された場合、当社ウェブサイトまたはアプリ内で通知します。",
-      },
+        "このプライバシーポリシーは、Triviiia（以下、「本サービス」といいます。）が提供するサービスにおける、個人情報の取り扱いについて説明するものです。",
+      sections: [
+        {
+          title: "1. 収集する情報",
+          content: "本サービスでは、以下の情報を収集する場合があります。",
+          list: [
+            "広告ID",
+            "デバイス情報（モデル、OSバージョンなど）",
+            "アプリの利用状況データ",
+            "地域情報（おおよその位置情報）",
+          ],
+          additionalContent:
+            "これらの情報は、Google AdMobを通じて収集される可能性があります。\n\nまた、本サービスでは、広告パーソナライズなどの目的で、ユーザーにトラッキング許可を求める場合があります。トラッキング許可は、iOSの設定からいつでも変更できます。",
+        },
+        {
+          title: "2. データの利用目的",
+          content: "収集したデータは、以下の目的で使用されます。",
+          list: [
+            "広告配信とその最適化",
+            "アプリのパフォーマンス向上",
+            "ユーザー体験の改善",
+          ],
+        },
+        {
+          title: "3. 第三者への提供",
+          content:
+            "Google AdMobなどの第三者サービスによるデータ取り扱いについては、各サービスのプライバシーポリシーをご確認ください。",
+          link: "https://policies.google.com/technologies/ads?hl=ja",
+          additionalContent: "Google プライバシーポリシー",
+        },
+        {
+          title: "4. データ管理とセキュリティ",
+          content:
+            "収集したデータは、適切な期間保存され、不正アクセスや紛失、改ざんなどから保護するための措置を講じています。",
+        },
+        {
+          title: "5. ユーザーの権利",
+          content: "ユーザーは自身のデータに関して以下の権利を有します。",
+          list: [
+            "トラッキング許可の変更（iOS設定からATT設定を変更可能）",
+            "データ収集停止や削除の依頼",
+          ],
+        },
+        {
+          title: "6. プライバシーポリシーの変更",
+          content:
+            "本ポリシーが変更された場合、アプリ内通知またはウェブページ更新などにより通知します。",
+        },
+        {
+          title: "7. 広告設定とオプトアウト",
+          content:
+            "広告パーソナライズを無効にするには、以下のGoogle広告設定ページをご参照ください。",
+          link: "https://adssettings.google.com/authenticated",
+          additionalContent: "広告設定",
+        },
+      ],
       footer: {
         established: "制定日：2024年12月30日",
       },
@@ -57,47 +72,63 @@ const PrivacyPolicy = () => {
     en: {
       title: "Privacy Policy",
       intro:
-        "This Privacy Policy describes how Triviiia (hereinafter referred to as 'the Service') collects, uses, and shares information about you when you use our service.",
-      section1: {
-        title: "1. Collection of Personal Information",
-        content:
-          "We may collect the following personal information in connection with the provision of this service:",
-        list: [
-          "Device ID (such as advertising ID)",
-          "Approximate location information",
-          "App usage data (operation history)",
-          "Crash data and performance data",
-        ],
-      },
-      section2: {
-        title: "2. Purpose of Using Personal Information",
-        content: "We use the collected information for the following purposes:",
-        list: [
-          "Advertising display and optimization",
-          "Analysis for service improvement",
-          "Diagnosis of crash and performance issues",
-        ],
-      },
-      section3: {
-        title: "3. Provision to Third Parties",
-        content:
-          "We may share information collected by Google AdMob with third parties. Please refer to the Google Privacy Policy for details.",
-        link: "https://policies.google.com/technologies/ads?hl=en",
-      },
-      section4: {
-        title: "4. User Rights and Options",
-        content: "Users can manage their information in the following ways:",
-        list: [
-          "Reset or delete the advertising ID from the device settings",
-          "Change or withdraw consent from the in-app settings screen",
-          "Stop data collection by deleting the app",
-        ],
-      },
-      section5: {
-        title: "5. About Privacy Policy Updates",
-        content:
-          "If this policy is changed, we will notify you on our website or within the app.",
-      },
+        "This Privacy Policy describes how Triviiia (hereinafter referred to as 'the Service') handles personal information when you use our service.",
+      sections: [
+        {
+          title: "1. Information We Collect",
+          content:
+            "We may collect the following information when you use our service:",
+          list: [
+            "Advertising ID",
+            "Device information (model, OS version, etc.)",
+            "App usage data",
+            "Approximate location information",
+          ],
+          additionalContent:
+            "This information may be collected through Google AdMob.\n\nAdditionally, we may request tracking permission from users for purposes such as ad personalization. You can change tracking permissions at any time in your iOS settings.",
+        },
+        {
+          title: "2. How We Use Your Data",
+          content: "The collected data is used for the following purposes:",
+          list: [
+            "Advertising delivery and optimization",
+            "Improving app performance",
+            "Enhancing user experience",
+          ],
+        },
+        {
+          title: "3. Sharing with Third Parties",
+          content:
+            "Please refer to the privacy policies of third-party services such as Google AdMob for information on how they handle data.",
+          link: "https://policies.google.com/technologies/ads?hl=en",
+          additionalContent: "Google Privacy Policy",
+        },
+        {
+          title: "4. Data Management and Security",
+          content:
+            "The collected data is stored for an appropriate period and measures are taken to protect it from unauthorized access, loss, or alteration.",
+        },
+        {
+          title: "5. Your Rights",
+          content: "Users have the following rights regarding their data:",
+          list: [
+            "Change tracking permissions (you can change ATT settings from iOS settings)",
+            "Request to stop or delete data collection",
+          ],
+        },
+        {
+          title: "6. Changes to This Privacy Policy",
+          content:
+            "If this policy is changed, we will notify you through in-app notifications or updates to our website.",
+        },
+        {
+          title: "7. Ad Settings and Opt-Out",
+          content:
+            "To disable ad personalization, please refer to the following Google Ad Settings page.",
+          link: "https://adssettings.google.com/authenticated",
+          additionalContent: "Ad Settings",
+        },
+      ],
       footer: {
         established: "Established: December 30, 2024",
       },
@@ -135,42 +166,32 @@ const PrivacyPolicy = () => {
         <h1 className="text-3xl font-bold mb-4">{currentContent.title}</h1>
         <p className="mb-4">{currentContent.intro}</p>
 
-        <h2 className="text-2xl font-bold mt-8 mb-2">
-          {currentContent.section1.title}
-        </h2>
-        <p className="mb-4">{currentContent.section1.content}</p>
-        <ul className="list-disc list-inside mb-4">
-          {currentContent.section1.list &&
-            currentContent.section1.list.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-        </ul>
-
-        <h2 className="text-2xl font-bold mt-8 mb-2">
-          {currentContent.section2.title}
-        </h2>
-        <p className="mb-4">{currentContent.section2.content}</p>
-        <ul className="list-disc list-inside mb-4">
-          {currentContent.section2.list &&
-            currentContent.section2.list.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-        </ul>
-
-        <h2 className="text-2xl font-bold mt-8 mb-2">
-          {currentContent.section3.title}
-        </h2>
-        <p className="mb-4">{currentContent.section3.content}</p>
-
-        <h2 className="text-2xl font-bold mt-8 mb-2">
-          {currentContent.section4.title}
-        </h2>
-        <p className="mb-4">{currentContent.section4.content}</p>
-
-        <h2 className="text-2xl font-bold mt-8 mb-2">
-          {currentContent.section5.title}
-        </h2>
-        <p className="mb-4">{currentContent.section5.content}</p>
+        {currentContent.sections.map((section, index) => (
+          <div key={index}>
+            <h2 className="text-2xl font-bold mt-8 mb-2">{section.title}</h2>
+            <p className="mb-4">{section.content}</p>
+            {section.list && (
+              <ul className="list-disc list-inside mb-4">
+                {section.list.map((item, itemIndex) => (
+                  <li key={itemIndex}>{item}</li>
+                ))}
+              </ul>
+            )}
+            {section.additionalContent && !section.link && (
+              <p className="mb-4">{section.additionalContent}</p>
+            )}
+            {section.link && (
+              <a
+                href={section.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline mb-4 block"
+              >
+                {section.additionalContent}
+              </a>
+            )}
+          </div>
+        ))}
 
         <p className="mt-8">{currentContent.footer.established}</p>
       </div>
