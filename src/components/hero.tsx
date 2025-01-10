@@ -24,12 +24,18 @@ export default function Hero() {
             Got a few minutes? Learn something new with our fun trivia app!
           </p>
           <div className="flex justify-center">
-            <img
-              src="/app_store.svg"
-              alt="Download on the App Store"
-              className=""
-              width={150}
-            />
+            <a
+              href="https://apps.apple.com/jp/app/triviiia/id6739017439"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/app_store.svg"
+                alt="Download on the App Store"
+                className=""
+                width={150}
+              />
+            </a>
           </div>
         </div>
       </div>
