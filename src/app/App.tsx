@@ -13,8 +13,11 @@ export default function App() {
           <RootLayout>
             <Routes>
               <Route path="/" element={<Home />} />
+
               <Route path="/terms" element={<TermsPage />} />
+
               <Route path="/privacy" element={<PrivacyPage />} />
+
               <Route path="/contact" element={<ContactPage />} />
             </Routes>
           </RootLayout>

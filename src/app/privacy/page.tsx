@@ -65,8 +65,11 @@ const PrivacyPolicy = () => {
           additionalContent: "広告設定",
         },
       ],
+
       footer: {
         established: "制定日：2024年12月30日",
+        revised: "改訂日：2025年2月23日",
+        contact: "お問い合わせ先：isajiappdev@gmail.com",
       },
     },
     en: {
@@ -129,8 +132,11 @@ const PrivacyPolicy = () => {
           additionalContent: "Ad Settings",
         },
       ],
+
       footer: {
         established: "Established: December 30, 2024",
+        revised: "Revised: February 23, 2025",
+        contact: "Contact: isajiappdev@gmail.com",
       },
     },
   };
@@ -193,7 +199,15 @@ const PrivacyPolicy = () => {
           </div>
         ))}
 
-        <p className="mt-8">{currentContent.footer.established}</p>
+        <div className="mt-8 space-y-2">
+          <p>{currentContent.footer.established}</p>
+          {currentContent.footer.revised && (
+            <p>{currentContent.footer.revised}</p>
+          )}
+          {currentContent.footer.contact && (
+            <p>{currentContent.footer.contact}</p>
+          )}
+        </div>
       </div>
     </div>
   );

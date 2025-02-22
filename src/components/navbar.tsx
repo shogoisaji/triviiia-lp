@@ -11,6 +11,7 @@ export default function Navbar() {
             alt="Triviiia Logo"
             className="w-8 h-8 rounded-lg"
           />
+
           <span className="text-xl text-gray-100 font-semibold">Triviiia</span>
         </a>
 

@@ -42,6 +42,7 @@ const TermsOfUse = () => {
             "コンピューターまたは通信回線等が事故により停止した場合",
             "その他、運営者が本アプリの提供が困難と判断した場合",
           ],
+
           additionalContent:
             "運営者は、本アプリの提供の停止または中断により、ユーザーまたは第三者が被ったいかなる不利益または損害についても、一切の責任を負わないものとします。",
         },
@@ -79,6 +80,7 @@ const TermsOfUse = () => {
             "本アプリのストア説明ページでの告知",
             "運営者の公式ウェブサイトでの告知",
           ],
+
           additionalContent:
             "ユーザーの皆様には、より良いサービス体験のため、上記の場所を適宜ご確認いただくようお願いいたします。重要な情報やアップデートをお見逃しなく、常に最新の状態でアプリをお楽しみいただけます。\n\nこれらの方法で通知または連絡を行った場合、通知または連絡の内容は、運営者が当該通知または連絡を行った時点で、全てのユーザーに到達したものとみなされます。\n\nユーザーから運営者への通知または連絡は、運営者が本アプリまたは公式ウェブサイトにて指定する方法（お問い合わせフォーム、サポート用メールアドレスなど）により行うものとします。",
         },
@@ -98,6 +100,7 @@ const TermsOfUse = () => {
             "本アプリに掲載されるトリビアや雑学情報（以下「本情報」といいます。）は、運営者が独自に調査し提供するものです。本情報の正確性、完全性、有用性については可能な限り注意を払っておりますが、その内容について保証するものではありません。\n\nユーザーは、本情報を参考にする際、自らの判断と責任に基づいて利用するものとします。本情報に基づく行動によって生じた損害や不利益について、運営者は一切責任を負いません。\n\n本情報に誤りや不適切な内容が含まれている場合がございます。その場合、ユーザーは本アプリ内のお問い合わせフォームまたは運営者が指定する方法を通じてご報告いただけますようお願いいたします。\n\n運営者は、ユーザーからの報告を受けた場合、本情報の内容を確認し、必要に応じて修正または削除する権利を有します。ただし、報告に対する対応義務を負うものではありません。",
         },
       ],
+
       footer: "以上",
     },
     en: {
@@ -136,6 +139,7 @@ const TermsOfUse = () => {
             "When computers or communication lines are stopped due to an accident",
             "When the operator otherwise determines that it is difficult to provide this application",
           ],
+
           additionalContent:
             "The operator shall not be liable for any disadvantage or damage suffered by users or third parties due to the suspension or interruption of this application.",
         },
@@ -174,6 +178,7 @@ const TermsOfUse = () => {
             "Announcements on the application's store description page",
             "Announcements on the operator's official website",
           ],
+
           additionalContent:
             "Users are requested to check the above locations as appropriate for a better service experience. This will ensure that you do not miss important information and updates, and can always enjoy the application in its most up-to-date state.\n\nWhen notifications or communications are made by these methods, the content of the notifications or communications shall be deemed to have reached all users at the time the operator made such notifications or communications.\n\nNotifications or communications from users to the operator shall be made by the method specified by the operator in this application or on the official website (such as inquiry forms, support email addresses, etc.).",
         },
@@ -194,6 +199,7 @@ const TermsOfUse = () => {
             "The trivia and miscellaneous information (hereinafter referred to as 'the Information') posted on this application is provided by the operator based on its own research. While we pay as much attention as possible to the accuracy, completeness, and usefulness of the Information, we do not guarantee its content.\n\nUsers shall use the Information at their own discretion and responsibility. The operator shall not be liable for any damages or disadvantages caused by actions based on the Information.\n\nThe Information may contain errors or inappropriate content. In such cases, users are requested to report it through the inquiry form in this application or by the method specified by the operator.\n\nThe operator has the right to check the content of the Information upon receiving a report from a user and to correct or delete it as necessary. However, the operator is not obligated to respond to the report.",
         },
       ],
+
       footer: "End of Terms",
     },
   };

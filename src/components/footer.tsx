@@ -9,6 +9,7 @@ export default function Footer() {
               alt="Triviiia Logo"
               className="w-8 h-8 rounded-lg"
             />
+
             <span className="text-xl text-gray-200 font-semibold">
               Triviiia
             </span>

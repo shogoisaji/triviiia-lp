@@ -3,6 +3,7 @@ export default function Hero() {
     <section className="relative pt-12 pb-2 overflow-hidden bg-custom-dark">
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-emerald-500/20 rounded-full blur-3xl" />
+
       <div className="absolute bottom-16 right-10 w-32 h-32 bg-emerald-500/20 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative">
@@ -13,6 +14,7 @@ export default function Hero() {
               alt="Triviiia Logo"
               className="w-32 h-32 rounded-lg"
             />
+
             <span className="text-4xl text-gray-100 font-semibold">
               Triviiia
             </span>
