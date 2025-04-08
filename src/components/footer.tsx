@@ -3,17 +3,13 @@ export default function Footer() {
     <footer className="py-8 bg-custom-dark">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <a href="/" className="flex items-center space-x-2">
-            <img
-              src="/logo.png"
-              alt="Triviiia Logo"
-              className="w-8 h-8 rounded-lg"
-            />
+          <img
+            src="/logo.png"
+            alt="Triviiia Logo"
+            className="w-8 h-8 rounded-lg"
+          />
 
-            <span className="text-xl text-gray-200 font-semibold">
-              Triviiia
-            </span>
-          </a>
+          <span className="text-xl text-gray-200 font-semibold">Triviiia</span>
 
           <nav className="flex flex-wrap justify-center gap-6">
             <a href="/terms" className="text-gray-200 hover:text-green-300">
